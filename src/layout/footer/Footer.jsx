@@ -10,15 +10,15 @@ const Footer = () => {
       <div className="px-12 py-6 flex gap-36 pb-20">
         <div className="flex flex-col justify-start gap-3">
           <img className="h-36 w-36 self-center" src={logo} alt="" />
-          <div className="text-lightText">
+          <div className="text-lightText font-textFont">
             <p>Mangalmay Institute of Management Technology</p>
             <p>Greate Noida, Uttar Pradesh</p>
           </div>
-          <h1 className="font-medium">ezwoods@info.in</h1>
+          <h1 className="font-medium font-headingFont">ezwoods@info.in</h1>
           <Button />
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-3 font-headingFont">
             {footerData.map((data, index) => (
               <div key={index} className="flex flex-col gap-4">
                 <p className="font-medium text-lg">{data.title}</p>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-[1440px] mx-auto bg-violet-200/20 h-16 rounded-t-2xl flex justify-center items-center text-lightText">
+      <div className="font-headingFont w-[1440px] mx-auto bg-violet-200/50 h-16 rounded-t-2xl flex justify-center items-center text-lightText">
         Copyright &copy; EZwOODs. All rights reserved
       </div>
     </div>
