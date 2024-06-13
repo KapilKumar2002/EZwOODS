@@ -1,3 +1,9 @@
+import diningTable from "../../assets/dining.png";
+import sofa from "../../assets/sofa.png";
+import temple from "../../assets/temple.png";
+import mattress from "../../assets/mattress.png";
+import bed from "../../assets/bed.png";
+
 export const tabs = [
   {
     name: "Home",
@@ -107,5 +113,28 @@ export const footerData = [
         to: "/",
       },
     ],
+  },
+];
+
+export const categoryItems = [
+  {
+    title: "Dining Table",
+    img: diningTable,
+  },
+  {
+    title: "Sofa",
+    img: sofa,
+  },
+  {
+    title: "Temple",
+    img: temple,
+  },
+  {
+    title: "Bed",
+    img: bed,
+  },
+  {
+    title: "Mattress",
+    img: mattress,
   },
 ];

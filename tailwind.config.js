@@ -4,16 +4,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bodyFont: ["Poppins", "sans-serif"],
+        headingFont: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        buttonFont: ['"LXGW WenKai TC"', "sans-serif"],
+        textFont: ['"Ibarra Real Nova"', "sans-serif"],
       },
       colors: {
-        primaryColor: "rgb(234 179 8 / 0.6)",
-        disabledColor: "rgb(243 244 246 / 1)",
-        bodyColor: "#212428",
-        lightText: "#c4cfde",
+        secondaryColor: "#FFEFDF",
+        primaryColor: "#FFDC8D",
+        disabledColor: "#EAE9E8",
+        dialogShadow: "#212428",
+        lightText: "#c1c4c9",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
-        designColor: "#ff014f",
       },
     },
   },
