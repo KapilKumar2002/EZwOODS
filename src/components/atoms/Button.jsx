@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Button = () => {
-  return <div>Button</div>;
+  return (
+    <Link className="self-start text-lg px-7 py-3 rounded-full text-white bg-black flex justify-center items-center">
+      Contact Us
+    </Link>
+  );
 };
 
 export default Button;
