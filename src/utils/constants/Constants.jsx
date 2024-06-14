@@ -3,6 +3,7 @@ import sofa from "../../assets/sofa.png";
 import temple from "../../assets/temple.png";
 import mattress from "../../assets/mattress.png";
 import bed from "../../assets/bed.png";
+import sofaP from "../../assets/sofaP.png";
 
 export const tabs = [
   {
@@ -136,5 +137,93 @@ export const categoryItems = [
   {
     title: "Mattress",
     img: mattress,
+  },
+];
+
+export const Products = [
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
+  },
+  {
+    image: sofaP,
+    name: "Beige Sofa #345",
+    price: "$13459",
   },
 ];
