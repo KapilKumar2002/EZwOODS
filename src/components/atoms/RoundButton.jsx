@@ -6,7 +6,7 @@ const RoundButton = (props) => {
     <Link
       to={to}
       onClick={onClick}
-      className="rounded-full p-3 shadow-sm border w-12 h-12 flex justify-center items-center bg-primaryColor text-2xl"
+      className="rounded-full p-3 shadow-sm border w-12 h-12 flex justify-center items-center bg-disabledColor duration-500 hover:bg-primaryColor text-2xl"
     >
       {icon}
     </Link>

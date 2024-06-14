@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="font-headingFont w-[1440px] mx-auto bg-violet-200/50 h-16 rounded-t-2xl flex justify-center items-center text-lightText">
+      <div className="font-buttonFont w-[1440px] mx-auto bg-disabledColor h-16 rounded-t-2xl flex justify-center items-center">
         Copyright &copy; EZwOODs. All rights reserved
       </div>
     </div>
