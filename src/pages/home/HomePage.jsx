@@ -6,7 +6,6 @@ import Title from "../../components/atoms/Title";
 import sofaP from "../../assets/sofaP.jpg";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import Button from "../../components/atoms/Button";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
