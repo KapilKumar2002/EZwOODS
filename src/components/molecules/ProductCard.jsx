@@ -1,11 +1,13 @@
 import React from "react";
 import { GrFavorite } from "react-icons/gr";
 import { LuShoppingCart } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const ProductCard = (props) => {
-  const { product, className } = props;
+  const { product, className, to } = props;
   return (
-    <div
+    <Link
+      to={"/product"}
       className={`h-96 relative p-4 bg-disabledColor rounded-xl ${className} hover:bg-secondaryColor duration-700 font-headingFont font-medium`}
     >
       <img
@@ -24,7 +26,7 @@ const ProductCard = (props) => {
         <h1>{product.name}</h1>
         <h1>{product.price}</h1>
       </div>
-    </div>
+    </Link>
   );
 };
 

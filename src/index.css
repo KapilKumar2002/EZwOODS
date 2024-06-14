@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .max-container {
+        @apply w-[90%] mx-auto
+    }
+}
+
 /* width and height of the scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
