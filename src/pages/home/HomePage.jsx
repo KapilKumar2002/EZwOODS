@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-14 bg-primaryColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 flex justify-center items-center absolute bottom-10 right-10 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-14 bg-disabledColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 flex justify-center items-center absolute bottom-10 right-10 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <FaArrowRight />
@@ -23,7 +23,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-14 bg-primaryColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 flex justify-center items-center absolute bottom-10 right-32 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-14 bg-disabledColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 flex justify-center items-center absolute bottom-10 right-32 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <FaArrowLeft />
@@ -82,30 +82,32 @@ const HomePage = () => {
           </div>
         ))}
       </Slider>
-      <div className="flex justify-center gap-5">
-        {categoryItems.map((categoryItem, index) => (
-          <CategoryCard
-            key={index}
-            icon={categoryItem.img}
-            title={categoryItem.title}
-          />
-        ))}
-      </div>
-      <div className="w-[90%] mx-auto flex flex-col gap-10">
-        <Title title={"Featured Sofas"} />
-        <div className="grid grid-cols-4 gap-10">
-          {Products.map(
-            (product, index) =>
-              index < 6 && (
-                <ProductCard
-                  product={product}
-                  className={index % 4 === 0 && `col-span-2`}
-                />
-              )
-          )}
+      <div className="max-container flex flex-col gap-10">
+        <div className="flex justify-center gap-5">
+          {categoryItems.map((categoryItem, index) => (
+            <CategoryCard
+              key={index}
+              icon={categoryItem.img}
+              title={categoryItem.title}
+            />
+          ))}
         </div>
-        <div className="px-4 py-2 bg-disabledColor hover:bg-primaryColor self-end duration-700">
-          <h1 className="font-buttonFont font-medium">View All</h1>
+        <div className="flex flex-col gap-10">
+          <Title title={"Featured Sofas"} />
+          <div className="grid grid-cols-4 gap-10">
+            {Products.map(
+              (product, index) =>
+                index < 6 && (
+                  <ProductCard
+                    product={product}
+                    className={index % 4 === 0 && `col-span-2`}
+                  />
+                )
+            )}
+          </div>
+          <div className="px-4 py-2 bg-disabledColor hover:bg-primaryColor self-end duration-700">
+            <h1 className="font-buttonFont font-medium">View All</h1>
+          </div>
         </div>
       </div>
     </div>
