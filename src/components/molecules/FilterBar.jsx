@@ -18,8 +18,14 @@ import {
   Cog6ToothIcon,
   InboxIcon,
   PowerIcon,
+  CircleStackIcon,
+  MagnifyingGlassCircleIcon,
 } from "@heroicons/react/24/solid";
-import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import {
+  ChevronRightIcon,
+  ChevronDownIcon,
+  EllipsisHorizontalCircleIcon,
+} from "@heroicons/react/24/outline";
 
 export function FilterBar() {
   const [open, setOpen] = React.useState(0);
@@ -29,12 +35,7 @@ export function FilterBar() {
   };
   //   h-[calc(100vh-2rem)]
   return (
-    <Card className=" w-full max-w-[20rem]">
-      <div className="mb-2 p-4">
-        <Typography variant="h5" color="blue-gray">
-          Sidebar
-        </Typography>
-      </div>
+    <div className=" w-full max-w-[20rem]">
       <List>
         <Accordion
           open={open === 1}
@@ -52,11 +53,8 @@ export function FilterBar() {
               onClick={() => handleOpen(1)}
               className="border-b-0 p-3"
             >
-              <ListItemPrefix>
-                <PresentationChartBarIcon className="h-5 w-5" />
-              </ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
-                Dashboard
+                Color
               </Typography>
             </AccordionHeader>
           </ListItem>
@@ -64,21 +62,21 @@ export function FilterBar() {
             <List className="p-0">
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <div className="w-4 h-4 rounded-full bg-green-500"></div>
                 </ListItemPrefix>
-                Analytics
+                Green
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <div className="w-4 h-4 rounded-full bg-red-500"></div>
                 </ListItemPrefix>
-                Reporting
+                Red
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <div className="w-4 h-4 rounded-full bg-blue-500"></div>
                 </ListItemPrefix>
-                Projects
+                Blue
               </ListItem>
             </List>
           </AccordionBody>
@@ -99,11 +97,8 @@ export function FilterBar() {
               onClick={() => handleOpen(2)}
               className="border-b-0 p-3"
             >
-              <ListItemPrefix>
-                <ShoppingBagIcon className="h-5 w-5" />
-              </ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
-                E-Commerce
+                Price
               </Typography>
             </AccordionHeader>
           </ListItem>
@@ -113,52 +108,18 @@ export function FilterBar() {
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Orders
+                500 - 1500
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Products
+                Above 1500
               </ListItem>
             </List>
           </AccordionBody>
         </Accordion>
-        <hr className="my-2 border-blue-gray-50" />
-        <ListItem>
-          <ListItemPrefix>
-            <InboxIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Inbox
-          <ListItemSuffix>
-            <Chip
-              value="14"
-              size="sm"
-              variant="ghost"
-              color="blue-gray"
-              className="rounded-full"
-            />
-          </ListItemSuffix>
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <UserCircleIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Profile
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <Cog6ToothIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Settings
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <PowerIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Log Out
-        </ListItem>
       </List>
-    </Card>
+    </div>
   );
 }

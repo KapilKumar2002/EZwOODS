@@ -3,7 +3,7 @@ import CategoryCard from "../../components/molecules/CategoryCard";
 import { Products, categoryItems } from "../../utils/constants/Constants";
 import ProductCard from "../../components/molecules/ProductCard";
 import Title from "../../components/atoms/Title";
-import sofaP from "../../assets/sofaP.jpg";
+import carousel1 from "../../assets/carousel1.png";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
@@ -68,9 +68,13 @@ const HomePage = () => {
       ></div>
     ),
   };
-  const slides = [{ image: sofaP }, { image: sofaP }, { image: sofaP }];
+  const slides = [
+    { image: carousel1 },
+    { image: carousel1 },
+    { image: carousel1 },
+  ];
   return (
-    <div className="py-5 flex flex-col gap-10">
+    <div className="flex flex-col gap-10">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div className="h-[450px] cursor-pointer outline-none">
