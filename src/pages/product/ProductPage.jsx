@@ -3,6 +3,8 @@ import { FilterBar } from "../../components/molecules/FilterBar";
 import { Card } from "@material-tailwind/react";
 import carousel1 from "../../assets/carousel1.png";
 import Title from "../../components/atoms/Title";
+import { Grid } from "@mui/material";
+import CatalogList from "./catalogGrid/CatalogGrid";
 
 const ProductPage = () => {
   return (
@@ -12,11 +14,11 @@ const ProductPage = () => {
       </Card>
       <div className="flex gap-10">
         <FilterBar />
-        <div>
+        <div className="flex flex-col gap-10">
           <div>
-            <Title title={"Dining Table"} />
+            <Title title={"Dining Tables"} />
           </div>
-          <div></div>
+          <CatalogList />
         </div>
       </div>
     </div>

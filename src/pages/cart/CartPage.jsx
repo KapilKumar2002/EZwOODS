@@ -14,13 +14,6 @@ const CartPage = () => {
       <h1 className="font-medium font-headingFont text-3xl text-center mb-10">
         SHOPPING CART
       </h1>
-      {/* <div className="flex justify-between">
-        <span>PRODUCT</span>
-        <div>
-          <span>QUANTITY</span>
-          <span>PRICE</span>
-        </div>
-      </div> */}
       <div className="flex font-headingFont">
         <span className="pl-14 w-full flex items-center">PRODUCT</span>
 
