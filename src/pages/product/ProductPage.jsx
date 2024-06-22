@@ -12,7 +12,7 @@ const ProductPage = () => {
       <Card className="h-80">
         <img src={carousel1} alt="" className="rounded-lg h-full" />
       </Card>
-      <div className="flex gap-10">
+      <div className=" flex flex-col gap-10">
         <FilterBar />
         <div className="flex flex-col gap-10">
           <div>
