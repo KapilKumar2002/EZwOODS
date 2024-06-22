@@ -8,23 +8,23 @@ const ProductCard = (props) => {
   return (
     <Link
       to={"/product"}
-      className={`h-96 relative p-4 bg-disabledColor rounded-xl ${className} hover:bg-secondaryColor duration-700 font-headingFont font-medium`}
+      className={`max-h-80 relative p-4 bg-disabledColor rounded-xl ${className} hover:bg-secondaryColor duration-700 font-headingFont font-medium`}
     >
       <img
         src={product.image}
         alt=""
         className={`h-full w-full object-contain`}
       />
-      <div className="absolute top-5 left-5 text-4xl">
+      <div className="absolute top-5 left-5 lg:text-4xl text-2xl">
         <GrFavorite />
       </div>
-      <div className="absolute bottom-5 right-5 h-14 w-14 rounded-full bg-primaryColor flex justify-center items-center shadow-md">
-        <LuShoppingCart className=" text-2xl" />
+      <div className="absolute lg:bottom-5 top-5 right-5 lg:h-14 lg:w-14 w-10 h-10 rounded-full bg-primaryColor flex justify-center items-center shadow-md">
+        <LuShoppingCart className="lg:text-2xl text-xl" />
       </div>
 
       <div className="absolute bottom-5">
         <h1>{product.name}</h1>
-        <h1>{product.price}</h1>
+        <h1 className="md:text-lg text-xs">{product.price}</h1>
       </div>
     </Link>
   );

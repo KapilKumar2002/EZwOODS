@@ -8,16 +8,21 @@ import { GrFavorite } from "react-icons/gr";
 import { IoPersonOutline } from "react-icons/io5";
 const Header = () => {
   return (
-    <div className="h-14 flex justify-between">
+    <div className="h-14 flex justify-between items-center gap-10">
       <img src={logo} alt="" className="h-full" />
-      <div className="text-red-200 w-1/3 rounded-full bg-disabledColor p-2">
+      <div className="text-red-200 lg:w-1/2 w-full md:rounded-full bg-disabledColor p-2 md:h-full md:static fixed h-14 left-0 bottom-0 z-50">
         <ul className="w-full h-full flex gap-2 justify-between">
           {tabs.map((tab, i) => (
             <li
               key={i}
-              className="font-headingFont font-medium w-full rounded-full text-center text-black flex justify-center items-center hover:bg-primaryColor duration-700"
+              className="font-headingFont  h-full font-medium w-full rounded-full text-center text-black flex justify-center items-center hover:bg-primaryColor duration-700"
             >
-              <Link to={tab.to}>{tab.name}</Link>
+              <Link
+                className="h-full flex items-center justify-center px-2 md:text-lg text-xs"
+                to={tab.to}
+              >
+                {tab.name}
+              </Link>
             </li>
           ))}
         </ul>
