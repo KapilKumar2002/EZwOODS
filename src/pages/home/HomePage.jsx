@@ -77,7 +77,7 @@ const HomePage = () => {
     <div className="flex flex-col gap-10">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div className="h-[450px] cursor-pointer outline-none">
+          <div className="md:h-[450px] h-96 cursor-pointer outline-none">
             <img
               src={slide.image}
               alt=""
@@ -99,13 +99,13 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col gap-10">
           <Title title={"Featured Sofas"} />
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-10 gap-2">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-10 gap-2">
             {Products.map(
               (product, index) =>
                 index < 6 && (
                   <ProductCard
                     product={product}
-                    className={index % 4 === 0 && `col-span-2`}
+                    className={index % 4 === 0 && `lg:col-span-2`}
                   />
                 )
             )}
