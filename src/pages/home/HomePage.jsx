@@ -91,6 +91,7 @@ const HomePage = () => {
           {categoryItems.map((categoryItem, index) => (
             <CategoryCard
               key={index}
+              to={categoryItem.to}
               icon={categoryItem.img}
               title={categoryItem.title}
             />

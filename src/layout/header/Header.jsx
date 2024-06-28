@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="h-14 flex justify-between items-center gap-10">
       <img src={logo} alt="" className="h-full" />
-      <div className="text-red-200 lg:w-1/2 w-full md:rounded-full bg-disabledColor p-2 md:h-full md:static fixed h-14 left-0 bottom-0 z-50">
+      <div className="text-red-200 lg:w-1/3 w-full md:rounded-full bg-disabledColor p-2 md:h-full md:static fixed h-14 left-0 bottom-0 z-50">
         <ul className="w-full h-full flex gap-2 justify-between">
           {tabs.map((tab, i) => (
             <li
@@ -28,12 +28,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="flex justify-between gap-2">
-        <RoundButton
-          icon={<GrFavorite />}
-          onClick={() => {
-            console.log("Kapil");
-          }}
-        />
+        <RoundButton icon={<GrFavorite />} to={"/wishlist"} />
         <RoundButton to={"/cart"} icon={<LuShoppingCart />} />
         <RoundButton icon={<IoPersonOutline />} />
       </div>
