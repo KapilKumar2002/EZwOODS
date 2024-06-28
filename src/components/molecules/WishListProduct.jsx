@@ -39,7 +39,7 @@ export default function WishListProduct(props) {
           </div>
           <RatingReadOnly defaultValue={2.5} />
         </CardContent>
-        <CardActions className="flex justify-between z-50 sticky  hover:static">
+        <CardActions className="flex justify-between">
           <Button size="small" className="bg-primaryColor text-black">
             Add to Cart
           </Button>
