@@ -87,7 +87,7 @@ const HomePage = () => {
         ))}
       </Slider>
       <div className="max-container flex flex-col gap-10">
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-center md:gap-5 gap-1">
           {categoryItems.map((categoryItem, index) => (
             <CategoryCard
               key={index}
