@@ -77,7 +77,7 @@ const HomePage = () => {
     <div className="flex flex-col gap-10">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div className="md:h-[450px] h-96 cursor-pointer outline-none">
+          <div className="md:h-[450px] h-64 cursor-pointer outline-none">
             <img
               src={slide.image}
               alt=""
