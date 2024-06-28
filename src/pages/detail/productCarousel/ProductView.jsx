@@ -33,22 +33,15 @@ const ProductView = () => {
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            gap: "80px",
-          }}
-        >
-          {dots}
-        </div>
+        <div className="flex md:gap-20 gap-14">{dots}</div>
       </div>
     ),
     customPaging: (i) => (
-      <div className="w-24 absolute -translate-x-[50%] left-[50%] flex justify-center items-center">
+      <div className="md:w-24 w-20 absolute -translate-x-[50%] left-[50%] flex justify-center items-center">
         <img
           src={slides[i].image}
           alt=""
-          className={`h-24 w-24 object-cover rounded-md ${
+          className={`md:h-24 h-20 md:w-24 w-20 object-cover rounded-md ${
             i == dotActive ? "border-2 border-white" : ""
           }`}
         />
@@ -61,11 +54,11 @@ const ProductView = () => {
       <div className="flex flex-col gap-6 lg:w-2/4">
         <Slider className="w-full" {...settings}>
           {slides.map((slide, index) => (
-            <div className="h-[550px] w-full outline-none">
+            <div className="md:h-[550px] h-96 w-full outline-none duration-500">
               <img
                 src={slide.image}
                 alt=""
-                className="h-[450px] w-full object-cover rounded-xl  aspect-square"
+                className="md:h-[450px] h-72 w-full object-cover rounded-xl  aspect-square duration-700"
               />
             </div>
           ))}
