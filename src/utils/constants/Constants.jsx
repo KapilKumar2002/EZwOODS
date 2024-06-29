@@ -12,7 +12,7 @@ export const tabs = [
   },
   {
     name: "About",
-    to: "/",
+    to: "/about",
   },
   {
     name: "Store",
