@@ -5,7 +5,7 @@ import CartPage from "./pages/cart/CartPage";
 import ProductPage from "./pages/product/ProductPage";
 import WishListPage from "./pages/wishlist/WishListPage";
 import AboutPage from "./pages/about/AboutPage";
-import ProductView from "./pages/detail/productCarousel/ProductView";
+import ProductDetail from "./pages/detail/ProductDetail";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,7 +17,7 @@ function App() {
         { path: "/product", element: <ProductPage /> },
         { path: "/cart", element: <CartPage /> },
         { path: "/wishlist", element: <WishListPage /> },
-        { path: "/product/1", element: <ProductView /> },
+        { path: "/product/1", element: <ProductDetail /> },
         { path: "/about", element: <AboutPage /> },
       ],
     },
