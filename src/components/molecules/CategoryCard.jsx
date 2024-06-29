@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CategoryCard = (props) => {
-  const { title, icon } = props;
+  const { title, icon, to } = props;
   return (
-    <div className="font-headingFont w-72 h-56 flex flex-col justify-center items-center bg-disabledColor rounded-xl shadow-sm hover:bg-primaryColor duration-500">
-      <div className="  w-32 h-32 ">
+    <Link
+      to={to}
+      className="font-headingFont md:w-72 w-40 lg:h-56 md:h-44 h-20 flex flex-col justify-center items-center bg-disabledColor rounded-xl shadow-sm hover:bg-primaryColor duration-500 p-1"
+    >
+      <div className="md:w-32 w-10 md:h-32 h-10 flex justify-center items-center">
         <img src={icon} alt="" className="filter brightness-50" />
       </div>
-      <div className="mt-4">
-        <h1 className="font-medium">{title}</h1>
+      <div className="lg:mt-4 mt-1">
+        <h1 className="font-medium md:text-lg text-xs text-center">{title}</h1>
       </div>
-    </div>
+    </Link>
   );
 };
 

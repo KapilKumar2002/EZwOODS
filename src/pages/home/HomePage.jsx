@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-14 bg-disabledColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 flex justify-center items-center absolute bottom-10 right-10 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-14 hidden bg-disabledColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 md:flex justify-center items-center absolute bottom-10 right-10 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <FaArrowRight />
@@ -23,7 +23,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-14 bg-disabledColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 flex justify-center items-center absolute bottom-10 right-32 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-14 hidden bg-disabledColor hover:bg-black duration-300 rounded-full text-2xl text-gray-400 md:flex justify-center items-center absolute bottom-10 right-32 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <FaArrowLeft />
@@ -77,7 +77,7 @@ const HomePage = () => {
     <div className="flex flex-col gap-10">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div className="h-[450px] cursor-pointer outline-none">
+          <div className="md:h-[450px] h-64 cursor-pointer outline-none">
             <img
               src={slide.image}
               alt=""
@@ -87,10 +87,11 @@ const HomePage = () => {
         ))}
       </Slider>
       <div className="max-container flex flex-col gap-10">
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-center md:gap-5 gap-1">
           {categoryItems.map((categoryItem, index) => (
             <CategoryCard
               key={index}
+              to={categoryItem.to}
               icon={categoryItem.img}
               title={categoryItem.title}
             />
@@ -98,13 +99,13 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col gap-10">
           <Title title={"Featured Sofas"} />
-          <div className="grid grid-cols-4 gap-10">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-10 gap-2">
             {Products.map(
               (product, index) =>
                 index < 6 && (
                   <ProductCard
                     product={product}
-                    className={index % 4 === 0 && `col-span-2`}
+                    className={index % 4 === 0 && `lg:col-span-2`}
                   />
                 )
             )}

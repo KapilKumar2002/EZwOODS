@@ -121,22 +121,27 @@ export const categoryItems = [
   {
     title: "Dining Table",
     img: diningTable,
+    to: "/product",
   },
   {
     title: "Sofa",
     img: sofa,
+    to: "/product",
   },
   {
     title: "Temple",
     img: temple,
+    to: "/product",
   },
   {
     title: "Bed",
     img: bed,
+    to: "/product",
   },
   {
     title: "Mattress",
     img: mattress,
+    to: "/product",
   },
 ];
 

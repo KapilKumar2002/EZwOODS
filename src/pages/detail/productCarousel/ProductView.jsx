@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import RatingReadOnly from "../../../components/atoms/RatingReadOnly";
 import ProductTabs from "../../../components/atoms/ProductTabs";
 
+
 const ProductView = () => {
   const [images, setImages] = useState({
     img1: "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/3396ee3c-08cc-4ada-baa9-655af12e3120/scarpa-da-running-su-strada-invincible-3-xk5gLh.png",
