@@ -5,7 +5,6 @@ function AboutPage() {
   return (
     <div className="flex justify-center items-center p-5">
       <div className="flex flex-col items-center gap-5">
-        <button className="bg-blue-gray-300 rounded-md py-1 px-2">About</button>
         <span className="text-xl font-semibold">About Us</span>
         <div className="px-20 text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia

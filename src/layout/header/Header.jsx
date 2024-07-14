@@ -30,7 +30,13 @@ const Header = () => {
       <div className="flex justify-between gap-2">
         <RoundButton icon={<GrFavorite />} to={"/wishlist"} />
         <RoundButton to={"/cart"} icon={<LuShoppingCart />} />
-        <RoundButton icon={<IoPersonOutline />} />
+        {/* <RoundButton icon={<IoPersonOutline />} /> */}
+        <Link
+          to={"/login"}
+          className="bg-primaryColor font-headingFont px-4 rounded-md shadow-lg flex items-center"
+        >
+          Login
+        </Link>
       </div>
     </div>
   );
