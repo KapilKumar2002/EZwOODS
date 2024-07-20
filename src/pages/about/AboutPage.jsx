@@ -3,14 +3,19 @@ import React from "react";
 import AboutProfileCard from "../../components/molecules/AboutProfileCard";
 function AboutPage() {
   return (
-    <div className="flex justify-center items-center p-5">
+    <div className="flex justify-center items-center p-5 flex-col gap-5 container mx-auto">
       <div className="flex flex-col items-center gap-5">
-        <span className="text-xl font-semibold">About Us</span>
-        <div className="px-20 text-center">
+        <span className="text-2xl font-semibold font-headingFont">
+          About Us
+        </span>
+        <div className="px-20 text-center font-textFont">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
           error placeat quos est et odit eius, inventore laborum, quo veritatis
           commodi, sed quasi. Dolor quidem corporis officiis magnam, dignissimos
-          consectetur!
+          consectetur! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Mollitia error placeat quos est et odit eius, inventore laborum, quo
+          veritatis commodi, sed quasi. Dolor quidem corporis officiis magnam,
+          dignissimos consectetur!
         </div>
         <img
           className="rounded-md h-96 w-full"
@@ -18,21 +23,20 @@ function AboutPage() {
           alt=""
         />
         <div className="px-20 self-start flex flex-col gap-2">
-          <span className="font-semibold text-xl">Our Misson</span>
-          <div className="pt-3">
+          <span className="font-semibold text-xl my-4 font-headingFont">
+            Our Misson
+          </span>
+          <div className="pt-3 font-textFont">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vero
             autem, sequi at minima, facere sint enim tempora ullam magnam fugit
             quos doloribus, nemo eaque expedita asperiores unde dolorem
-            similique.
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vero
-            autem, sequi at minima, facere sint enim tempora ullam magnam fugit
-            quos doloribus, nemo eaque expedita asperiores unde dolorem
-            similique.
+            similique. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Harum vero autem, sequi at minima, facere sint enim tempora ullam
+            magnam fugit quos doloribus, nemo eaque expedita asperiores unde
+            dolorem similique.
           </div>
         </div>
-        <div className="pt-16 text-center">
+        <div className="pt-10 text-center flex flex-col gap-5">
           {" "}
           <span className="text-2xl font-semibold ">Our Amazing Team</span>
           <div>
