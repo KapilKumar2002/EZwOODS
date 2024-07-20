@@ -8,12 +8,14 @@ import AboutPage from "./pages/about/AboutPage";
 import ProductDetail from "./pages/detail/ProductDetail";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
+import ErrorPage from "./pages/error/Error";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <HomePage /> },
         { path: "/product", element: <ProductPage /> },
@@ -26,10 +28,12 @@ function App() {
     {
       path: "/login",
       element: <Login />,
+      errorElement: <ErrorPage />,
     },
     {
       path: "/register",
       element: <Register />,
+      errorElement: <ErrorPage />,
     },
   ]);
 
