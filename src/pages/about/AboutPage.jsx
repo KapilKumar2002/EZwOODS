@@ -84,7 +84,7 @@ function AboutPage() {
               <input type="checkbox" name="accept" id="accept" />
               <span className="text-sm">I accept the Terms</span>
             </div>
-            <button className="bg-blue-700 text-white rounded-md py-2 text-sm">
+            <button className="bg-primaryColor font-semibold rounded-md py-2 text-sm">
               Send message
             </button>
           </div>
